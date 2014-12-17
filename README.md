@@ -5,7 +5,7 @@
 </p>
 
 
-Pure CAROUSEL JS (purecarousel.js)
+Pure Carousel JS (purecarousel.js)
 ==========
 
 Um Carousel simples com efeitos de transition do CSS3 e Javascritp PURO
