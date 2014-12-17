@@ -10,12 +10,22 @@
 var PureCarousel = function() {
     return {
         init : function(element) {            
+            var el                     = document.querySelector(element);
+            var divOverflow            = document.createElement('div'); 
+            divOverflow.appendChild(el.cloneNode(true)); 
+            divOverflow.className      ='purecarrosel-overflow';
+            divOverflow.style.overflow = 'hidden';
+            divOverflow.style.height   = '100%';
+            divOverflow.style.position = 'relative';
+            el.parentNode.replaceChild(divOverflow, el);
+            
             var el             = document.querySelector(element);
             var elementLi      = element + " li";
             var elLi           = document.querySelector(elementLi);
             var largLi         = elLi.offsetWidth;
             var left           = el.offsetLeft;
             var quantLi        = el.children.length;
+            var childLi        = el.children;
             
             /* DATA */
             var next           = document.querySelector(el.dataset.next);
@@ -35,7 +45,7 @@ var PureCarousel = function() {
             var halfLiImpar    = (quantLi+1)/row;
             var quantProxImpar = (halfLiImpar-3) * largLi;
             var quantProxPar   = (halfLiPar-3) * largLi;
-            
+           
             /* Function */
             if( quantLi%2 === 0) {
                 var width = "" + largLi * halfLiPar + "px";
