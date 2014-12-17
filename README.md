@@ -62,8 +62,11 @@ vamos inicializar nosso plugin declarando class e/ou seletor css do seu carousel
 Como inicializa-los:
 
 Data-next   --> Você atribue a um seletor ID para um arrow de próximo;
+
 Data-prev   --> Você deve atribuir a um seletor ID para um arrow anterior;
+
 Data-amount --> Quantidade de colunas ele irar pecorrer;
+
 Data-row    --> Quantidade de linhas irar ter o seu carousel;
 
 ```
