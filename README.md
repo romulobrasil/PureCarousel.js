@@ -47,7 +47,7 @@ Por enquanto tem fazer desse modo pois ainda não está todo pronto pra criar as
 		
   	<a id="next" class="next sprite-next" title="Próximo"></a>
   </div>
-	```
+```
 	
 E também no footer:
 vamos inicializar nosso plugin declarando class e/ou seletor css do seu carousel.
