@@ -17,36 +17,33 @@ Para utilizar basta chamar o arquivo .js do plugin no footer:
 ```
 <script src="purecarousel.min.js"></script>
 ```
-Por enquanto tem fazer desse modo pois ainda não está todo pronto pra criar as divs dinamicamente:
+Basta declarar qualquer class sendo que seja inicializado posteriormente e os dois arrows:
 
 ```
 <div class="container-carousel">
-		<a id="prev" class="prev sprite-prev" title="Anterior"></a>
-		
-		<div class="carousel">
-			<div class="overflow">
-				<ul 
-				    data-next   = "#next"
-				    data-prev   = "#prev"
-				    data-amount = "3"
-				    data-row    = "2"
-        >
-					<li><img src="img/carousel.jpg" alt="" /></li>
-					<li><img src="img/carousel.jpg" alt="" /></li>
-					<li><img src="img/carousel.jpg" alt="" /></li>
-					<li><img src="img/carousel.jpg" alt="" /></li>
-					<li><img src="img/carousel.jpg" alt="" /></li>
-					<li><img src="img/carousel.jpg" alt="" /></li>
-					<li><img src="img/carousel.jpg" alt="" /></li>
-					<li><img src="img/carousel.jpg" alt="" /></li>
-					<li><img src="img/carousel.jpg" alt="" /></li>
-					<li><img src="img/carousel.jpg" alt="" /></li>
-				</ul>
-			</div>
-		</div>
-		
+	<a id="prev" class="prev sprite-prev" title="Anterior"></a>
+	<div class="carousel-content">
+		<ul 
+		    class       = "carousel"
+		    data-next   = "#next"
+		    data-prev   = "#prev"
+		    data-amount = "3"
+		    data-row    = "2"
+		>
+			<li><img src="img/carousel.jpg" alt="" /></li>
+			<li><img src="img/carousel.jpg" alt="" /></li>
+			<li><img src="img/carousel.jpg" alt="" /></li>
+			<li><img src="img/carousel.jpg" alt="" /></li>
+			<li><img src="img/carousel.jpg" alt="" /></li>
+			<li><img src="img/carousel.jpg" alt="" /></li>
+			<li><img src="img/carousel.jpg" alt="" /></li>
+			<li><img src="img/carousel.jpg" alt="" /></li>
+			<li><img src="img/carousel.jpg" alt="" /></li>
+			<li><img src="img/carousel.jpg" alt="" /></li>
+		</ul>
+	</div>	
   	<a id="next" class="next sprite-next" title="Próximo"></a>
-  </div>
+</div>
 ```
 	
 E também no footer:
@@ -54,7 +51,7 @@ vamos inicializar nosso plugin declarando class e/ou seletor css do seu carousel
 
 ```
 <script>
-    PureCarousel.init(".carousel ul"); 
+    PureCarousel.init(".carousel"); 
 </script>
 ```
 
