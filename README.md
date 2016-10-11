@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://romulobrasil.com">
-    <img height="220" width="300" src="http://romulobrasil.com/wp-content/themes/romulobrasil.com/img/logo.png"/>
+    <img height="220" width="300" src="https://romulobrasil.com/img/logo.png"/>
   </a>
 </p>
 
